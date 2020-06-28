@@ -7,28 +7,28 @@ curl [options] [URL...]
 -d, --data - The data to be sent.
 -H, --header - Additional header to be sent.
 
-GET
+**GET
 
-'''curl -X GET https://hriday.org/blog?id=13'''
+>curl -X GET https://hriday.org/blog?id=13
 
 POST
 
-curl -X POST -d "id=13&title=Protest&body=Protests in a lot of cities." https://hriday.org/blog
+>curl -X POST -d "id=13&title=Protest&body=Protests in a lot of cities." https://hriday.org/blog
 
 For JSON data,
 
-curl -X POST -H "Content-Type: application/json" -d '{"id": 13, "title": "Protest", "body": "Protests in a lot of cities."}' https://hriday.org/blog
+>curl -X POST -H "Content-Type: application/json" -d '{"id": 13, "title": "Protest", "body": "Protests in a lot of cities."}' https://hriday.org/blog
 
-PUT
+**PUT
 
-curl -X PUT -d "id=13&tag=BLM" https://hriday.org/blog/13
+>curl -X PUT -d "id=13&tag=BLM" https://hriday.org/blog/13
 
-PATCH
+**PATCH
 
 Same as above. Typically, PATCH is used for smaller PUT operations. 
 
-DELETE
+**DELETE
 
-curl -X DELETE https://hriday.org/blog/13
+>curl -X DELETE https://hriday.org/blog/13
 
 
