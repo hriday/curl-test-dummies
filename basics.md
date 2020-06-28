@@ -9,7 +9,7 @@ curl [options] [URL...]
 
 GET
 
-curl -X GET https://hriday.org/blog?id=13
+'''curl -X GET https://hriday.org/blog?id=13'''
 
 POST
 
