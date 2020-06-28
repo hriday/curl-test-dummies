@@ -2,10 +2,10 @@
 
 curl [options] [URL...]
 
--X, --request - The HTTP method to be used.
--i, --include - Include the response headers.
--d, --data - The data to be sent.
--H, --header - Additional header to be sent.
+- -X, --request - The HTTP method to be used.
+- -i, --include - Include the response headers.
+- -d, --data - The data to be sent.
+- -H, --header - Additional header to be sent.
 
 **GET
 
@@ -45,9 +45,9 @@ You can put the json part in a file, say creds.json, and call
 
 More curl options
 
---insecure - Ignore HTTPS certificate.
--c - Store the data erceived into a cookie file.
--b - Reuse the cookie data in a subsequent command.
+- --insecure - Ignore HTTPS certificate.
+- -c - Store the data erceived into a cookie file.
+- -b - Reuse the cookie data in a subsequent command.
 
 > curl --insecure -c cookies.txt -X POST -d 'username=admin&password;=admin' https://hriday.org/login
 
