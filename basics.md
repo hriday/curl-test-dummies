@@ -31,4 +31,6 @@ Same as above. Typically, PATCH is used for smaller PUT operations.
 
 >curl -X DELETE https://hriday.org/blog/13
 
+**AUTHENTICATION
 
+>curl -X GET -H "Authorization: Bearer {ACCESS_TOKEN}" https://hriday.org/blog?id=13
