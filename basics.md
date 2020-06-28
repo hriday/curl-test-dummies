@@ -48,9 +48,10 @@ More curl options
 - --insecure - Ignore HTTPS certificate.
 - -c - Store the data erceived into a cookie file.
 - -b - Reuse the cookie data in a subsequent command.
+- -u - User info
 
 > curl --insecure -c cookies.txt -X POST -d 'username=admin&password;=admin' https://hriday.org/login
 
 > curl --insecure -b cookies.txt -d @creds.json -H "Content-Type: application/json" -X POST https://hriday.org/login
 
-
+> curl -u account_id:account_key -i "https://hriday.org/login"
